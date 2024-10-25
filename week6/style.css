@@ -1,0 +1,42 @@
+
+/*id use #*/
+/* span#id1 {
+    color: red;
+}
+#id2{
+    color: green;
+}
+/*class use .*/
+/*span.highlight{
+    background-color: rgb(221, 255, 0);
+}
+
+.highlight{ 
+    background-color: pink;
+}
+/*ưu tiên cái nào có tag*/
+/*p + p {
+    font-style: italic;
+    font-weight: bold;
+}*/
+/*div.items > a {
+ color:green;
+ font-weight: bold;
+}*/ 
+.red {
+    color:red;
+}
+.underline {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+p[title]{
+    color: orange;
+}
+/*apply the last that match*/
+
+h1 , p {
+    color:green;
+ }
