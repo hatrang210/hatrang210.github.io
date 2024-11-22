@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleweb.css">
+</head>
+<body>
+    <h1>Ha Trang's calculator</h1>
+    <input type="text" id="a_value">
+    <input type="text" id="b_value">
+    <p id="result"></p>
+    <div class="button-container">
+    <button type="button" onclick="plus()">Plus</button>
+    <button type="button" onclick="minus()">Minus</button>
+</div>
+    <div class="button-container">
+    <button type="button" onclick="multiply()">Multiply</button>
+    <button type="button" onclick="divide()">Divide by</button>
+</div>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        function plus() {
+  const a = parseFloat(document.getElementById("a_value").value);
+  const b = parseFloat(document.getElementById("b_value").value);
+  const result = a + b;
+  document.getElementById("result").textContent = result;
+  if (isNaN(a) || isNaN(b) || a === 0 || b === 0) {
+    alert("Please enter valid non-zero numbers.");
+    return;
+  }
+}
+
+function minus() {
+  const a = parseFloat(document.getElementById("a_value").value);
+  const b = parseFloat(document.getElementById("b_value").value);
+  const result = a - b;
+  document.getElementById("result").textContent = result;
+  if (isNaN(a) || isNaN(b) || a === 0 || b === 0) {
+    alert("Please enter valid non-zero numbers.");
+    return;
+}
+}
+
+function multiply() {
+  const a = parseFloat(document.getElementById("a_value").value);
+  const b = parseFloat(document.getElementById("b_value").value);
+  const result = a * b;
+  document.getElementById("result").textContent = result;
+  if (isNaN(a) || isNaN(b) || a === 0 || b === 0) {
+    alert("Please enter valid non-zero numbers.");
+    return;
+  }
+}
+
+function divide() {
+  const a = parseFloat(document.getElementById("a_value").value);
+  const b = parseFloat(document.getElementById("b_value").value);
+  if (b === 0) {
+    document.getElementById("result").textContent = "Cannot divide by zero";
+  } else {
+    const result = a / b;
+    document.getElementById("result").textContent = result;
+  }
+  if (isNaN(a) || isNaN(b) || a === 0 ) {
+    alert("Please enter valid non-zero numbers.");
+    return;
+  }
+}
+function reset() {
+            var confirm_reset = confirm("Are you sure want to reset?");
+            if (confirm_reset == true) {
+            document.getElementById("a_value").value = "";
+            document.getElementById("b_value").value = "";
+            document.getElementById("result").textContent=""; }
+        }
+    </script>
+</body>
+</html>
