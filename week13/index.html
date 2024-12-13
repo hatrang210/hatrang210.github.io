@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age">
+        <br>
+        <!--dropdown-->
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+            <option value="2">No prefer</option>
+        </select>
+        <br>
+        <!--radio-->
+        <label>Gender:</label>
+        <label for="male">Male</label>
+        <input type="checkbox" name="gender2" id="gender2" value="Male">
+        <label for="Female">Female</label>
+        <input type="checkbox" name="gender2" id="gender2" value="Female">
+        <label for="no prefer">No prefer</label>
+        <input type="checkbox" name="gender2" id="gender2" value="No prefer">
+        <br>
+        <!--checkbox-->
+        <label for="tos">I agree to the terms of service</label>
+        <input type="checkbox" name="tos" id="tos">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
