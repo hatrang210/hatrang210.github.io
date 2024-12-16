@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Christmas Gathering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎄 Join Us for a Magical Christmas Gathering! 🎄</h1>
+</header>
+
+<main>
+    <section>
+        <p class="highlight">📅 Date: December 24th, 2024</p>
+        <p class="highlight">🕒 Time: 6:00 PM</p>
+        <p class="highlight">📍 Location: 172 Phố Trần Bình, Nam Từ Liêm, Hà Nội</p>
+        <a class="btn" href="https://bit.ly/partylocationhereeee" target="_blank">Open in Google Maps</a>
+    </section>
+
+    <section>
+        <p>Join us for an evening filled with joy, delicious food, and wonderful company. Bring your favorite holiday spirit and your best festive attire!</p>
+    </section>
+
+    <section>
+        <h2>🍽️ Menu:</h2>
+        <ul>
+            <li>
+                <img src="images/roast turkey.jpg" alt="Roast Turkey" width="250" height="270">
+                Roasted turkey and stuffing
+            </li>
+            <li>
+                <img src="images/holiday ham.jpg" alt="Holiday Ham" width="250" height="270">
+                Holiday ham
+            </li>
+            <li>
+                <img src="images/mashed potatoes.jpg" alt="Mashed Potatoes" width="250" height="270">
+                Side dishes: mashed potatoes, green bean casserole
+            </li>
+            <li>
+                <img src="images/christmas desserts.jpg" alt="Desserts" width="250" height="270">
+                Desserts: cookies, cupcakes, and more!
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🎉 Activities Planned:</h2>
+        <ul>
+            <li>Fun games for everyone</li>
+            <li>Ugly sweater contest</li>
+            <li>Gift exchange (if desired)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Respond by December 20th !!!</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br>
+            <label for="phone">Phone number</label>
+            <input type="number" placeholder="Enter your phone number">
+            <br>
+            <label for="attendees">Number of Attendees:</label>
+            <input type="number" id="attendees" name="attendees" placeholder="Enter the number of attendees">
+            <br>
+            <button type="submit">Register</button>
+        </form>
+        
+        <script>  
+            document.getElementById('registrationForm').addEventListener('submit', function(e) {  
+                const name = this.querySelector('input[name="name"]').value.trim();  
+                const email = this.querySelector('input[name="email"]').value.trim();  
+                const attendees = this.querySelector('input[name="attendees"]').value.trim();  
+         
+                if (!name || !email || !attendees) {  
+                    e.preventDefault();  
+                    alert('Please fill in all fields before submitting!');  
+                } else {  
+                    alert('Thank you for registering, ' + name + '!');     
+                }  
+            });  
+        </script>
+        
+    </section>
+
+    <section>
+        <h2>📷 Past Memories:</h2>
+        <div class="gallery">
+            <img src="images/noel2023.jpg" alt="Past Christmas Gathering 1">
+            <img src="images/noel2022.jpg" alt="Past Christmas Gathering 2">
+            <img src="images/noel2021.jpg" alt="Past Christmas Gathering 3">
+            <img src="images/noel2.jpg" alt="Past Christmas Gathering 4">
+        </div>
+    </section>
+
+    <section>
+        <p>Got questions? Reach out to us at <a href="mailto:nguyenhatrang21102004@gmail.com">nguyenhatrang21102004@gmail.com</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <p>Thank you for being part of our Christmas celebration! We can’t wait to celebrate with you!</p>
+    <p>🎊 Follow us on social media!</p>
+    <a href="https://www.instagram.com/"><img src="images/Christmas instagram icon.jpg" alt="Instagram Icon" height="40" width="40">Instagram</a>
+    <a href="https://www.facebook.com/"><img src="images/Christmas Facebook logo.jpg" alt="Facebook Icon" height="40" width="40">Facebook</a>
+    <p>#FestiveGathering2024</p>
+</footer>
+
+</body>
+</html>
